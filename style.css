@@ -1,0 +1,434 @@
+#appouterdiv{
+/*  display: flex;
+  justify-content: center;*/
+}
+
+#appinnerdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#needaname{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.none{
+  display: none;
+}
+
+#maintitle{
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+  color: white;
+  padding-top: 10px;
+}
+
+h1{
+	color: white;
+  font-size: 3em;
+}
+
+.chooseboardsizediv{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.chooseboardsizeitem{
+  width: 100px;
+  height: 50px;
+  background: lightblue;
+  color: #2196F3;
+  text-align: center;
+  font-weight: bold;
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.choosethemetitletext{
+  color:white;
+}
+
+.choosethemediv{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.choosethemeitem{
+  width: 100px;
+  height: 50px;
+  background: lightblue;
+  color: #2196F3;
+  text-align: center;
+  font-weight: bold;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+
+
+.chooseboardsizetitletext{
+  color:white;
+}
+
+
+#numbersdiv{
+  border:solid;
+  border-color: #2196F3;
+}
+
+#shapesdiv{
+  border:solid;
+  border-color: #2196F3;
+}
+
+#birdsdiv{
+  border:solid;
+  border-color: #2196F3;
+}
+
+#choosesize8{
+  border:solid;
+  border-color: #2196F3;
+}
+
+#choosesize16{
+  border:solid;
+  border-color: #2196F3;
+}
+
+#choosesize32{
+  border:solid;
+  border-color: #2196F3;
+}
+
+
+
+
+#numbersdiv:hover{
+  border:solid;
+  border-color: white;
+}
+
+#shapesdiv:hover{
+  border:solid;
+  border-color: white;
+}
+
+#birdsdiv:hover{
+  border:solid;
+  border-color: white;
+}
+
+#choosesize8:hover{
+  border:solid;
+  border-color: white;
+}
+
+#choosesize16:hover{
+  border:solid;
+  border-color: white;
+}
+
+#choosesize32:hover{
+  border:solid;
+  border-color: white;
+}
+
+#currentplayerdiv{
+  display: flex;
+
+}
+
+#currentlyplayertitle{
+  padding-right: 15px;
+  font-size: 2em;
+}
+
+#currentplayer{
+font-size: 2em;
+}
+
+.maingameboarddiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.playerscorediv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.cardsareadiv{
+  display: flex;
+  flex-direction: column;
+}
+
+#resetbuttondiv{
+  display: flex;
+  justify-content: center;
+  /*padding: 25px;*/
+}
+
+#resetbutton{
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #2196F3;
+  border-radius: 15px;
+  border: solid;
+  border-color: #2196F3;
+}
+
+#resetbutton:hover{
+  border: solid;
+  border-color: white;
+}
+
+.playerscoretext{
+  padding-right: 5px;
+}
+
+#playeronescore{
+  padding-top: 15px;
+  font-size: 3em;
+}
+
+#playertwoscore{
+  padding-top: 15px;
+  font-size: 3em;
+}
+
+#r0{
+  background: blue;
+}
+
+.ansbox{
+  background-color: pink;
+  padding: 50px;
+  border: solid;
+}
+
+#match-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 35px;
+  /*grid-column-gap: 5px;*/
+}
+
+/*.b1{
+  outline:solid;
+  padding: 50px;
+}*/
+
+/*<<<<<<<<<<< 8 Card Board >>>>>>>>>>>*/
+#match-container8{
+  display: grid;
+  grid-template-columns: 160px 160px 160px 160px;
+  grid-row-gap: 12.5px;
+  grid-column-gap: 25px;
+  padding: 25px;
+}
+
+.match-outer-item8{
+  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #2196F3;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  padding: 5px;
+  border: solid;
+  border-color: #2196F3;
+}
+
+.match-outer-item8:hover{
+border-color: white;
+}
+
+.front8{
+  position: absolute;
+  z-index: 2;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.back8{
+  /*position: absolute;*/
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+
+  color: #2196F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  font-size: 80px;
+  text-align: center;
+}
+
+/*<<<<<<<<<<< 16 Card Board >>>>>>>>>>>*/
+#match-container16{
+  display: grid;
+  grid-template-columns: 140px 140px 140px 140px;
+  grid-row-gap: 12.5px;
+  grid-column-gap: 25px;
+  padding: 25px;
+}
+
+.match-outer-item16{
+  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #2196F3;
+  width: 130px;
+  height: 130px;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid;
+  border-color: #2196F3;
+}
+
+.match-outer-item16:hover{
+  border-color: white;
+}
+
+.front16{
+  position: absolute;
+  z-index: 2;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 130px;
+  height: 130px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.back16{
+  /*position: absolute;*/
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+
+  color: #2196F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 130px;
+  height: 130px;
+  font-size: 80px;
+  text-align: center;
+}
+
+/*<<<<<<<<<<< 32 Card Board >>>>>>>>>>>*/
+#match-container32{
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-row-gap: 20px;
+  grid-column-gap: 40px;
+  padding: 55px;
+}
+
+.match-outer-item32{
+  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #2196F3;
+  width: 95px;
+  height: 95px;
+  border-radius: 15px;
+  padding: 5px;
+  border: solid;
+  border-color: #2196F3;
+}
+
+.match-outer-item32:hover{
+  border-color: white;
+}
+
+.front32{
+  position: absolute;
+  z-index: 2;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 95px;
+  height: 95px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.back32{
+  /*position: absolute;*/
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+
+  color: #2196F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  width: 95px;
+  height: 95px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/*FLIPPER STYLE*/
+.flipper {
+	position: relative;
+	transform: rotateY(180deg);
+	transition: 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flipback{
+  position: relative;
+  transform: rotateY(0deg);
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.spinbttn{
+	height: 305px;
+	width: 305px;
+}
