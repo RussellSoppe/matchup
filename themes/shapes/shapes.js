@@ -6,7 +6,7 @@ export const shapesthemearray = [
 
 `<img src="themes/shapes/heart.png" height="90px" width="auto"/>`,
 `<img src="themes/shapes/cube.png" height="90px" width="auto"/>`,
-`<img src="themes/shapes/arrow.png" height="90px" width="auto"/>`,
+`<img src="themes/shapes/arrow.png" height="auto" width="90px"/>`,
 `<img src="themes/shapes/diamond.png" height="90px" width="auto"/>`,
 
 `<img src="themes/shapes/cylinder.png" height="90px" width="auto"/>`,
