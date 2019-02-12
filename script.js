@@ -12,7 +12,7 @@ let p2score = document.getElementById("playertwoscore");
 let tracker1 = undefined;
 let value1 = "";
 let value2 = "";
-let count = 0;
+let count = 1;
 let player1score = 0;
 let player2score = 0;
 
@@ -20,19 +20,29 @@ let player2score = 0;
 let theme = numbersthemearray;
 
 
+
 // Action for when player clicks a card
 const onSpin = (id1, id2)=>{
   let current = document.getElementById(id1);
-  current.className = "flipper";
-  count = count + 1;
+  // current.className = "flipper";
+  // count = count + 1;
+  const sayThis = (words)=>{
+    let announcement = document.getElementById("announcements");
+    announcement.innerHTML = words;     
+  };
 
   switch(count){
+
     case 1:
       tracker1 = id1;
       value1 = document.getElementById(id2).innerHTML;
+      current.className = "flipper";
+      count = count + 1;
       break;
 
     case 2:
+      current.className = "flipper";
+      count = count + 1;
       //<<<<<<<<Check for Match>>>>>>>>>
       let track = tracker1;
       value2 = document.getElementById(id2).innerHTML;
@@ -51,12 +61,11 @@ const onSpin = (id1, id2)=>{
         };
       };
 
-
-
       if (value1 !== value2){
         // console.log("values do not equal");
-        setTimeout(nextPlayer, 6000);
-        setTimeout(()=>window.alert("No Match! Next Player's Turn."), 2000);
+        setTimeout(nextPlayer, 3500);
+        setTimeout(()=> sayThis("No match found, next players turn."), 500);
+        setTimeout(()=> sayThis(""), 3500);
       };
 
     // Set Player 1 Score
@@ -67,7 +76,8 @@ const onSpin = (id1, id2)=>{
           value1 = "";
           value2 = "";
           tracker1 = undefined;
-          setTimeout(()=>window.alert("You found a Match! Take another turn."), 2000);
+          setTimeout(()=> sayThis("Player 1 found a Match! Take another turn."), 500);
+          setTimeout(()=> sayThis(""), 3500);
       };
 
     // Set Player 2 Score
@@ -78,18 +88,28 @@ const onSpin = (id1, id2)=>{
           value1 = "";
           value2 = "";
           tracker1 = undefined;
-          setTimeout(()=>window.alert("You found a Match! Take another turn."), 2000);
+          setTimeout(()=> sayThis("Player 2 found a Match! Take another turn."), 500);
+          setTimeout(()=> sayThis(""), 3500);
       };
 
-    // Reset Turn Counter
-      count = 0;
+    // Reset Turn Counter and delay next click
+      const delayClick = ()=>{
+        count = 1;
+      };
+
+      setTimeout(()=>delayClick(), 3500);
+
+      break;
+
+    case 3:
+      sayThis("Please wait :)");
       break;
 
     default:
       alert("something went wrong");
   };
     
-}
+};
 
 
 
@@ -141,7 +161,9 @@ const createBoard = (boardsize, array)=>{
     
     let f = document.createElement("div");
     f.id = `f${i}`;
+    // f.className = "carditem";
     f.addEventListener("click", ()=>onSpin(`f${i}`, `b${i}`));
+
 
     let front = document.createElement("div");
     front.className = `front${boardsize}`;
@@ -151,7 +173,6 @@ const createBoard = (boardsize, array)=>{
     back.id =  `b${i}`;
     // this only prints up to 16, it is not repeating so will need to write a pattern for this to repeat.
     back.innerHTML = usetheme[i-1];
-
     f.appendChild(front);
     f.appendChild(back);
 
