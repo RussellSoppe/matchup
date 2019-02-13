@@ -297,13 +297,14 @@ h1{
 .match-outer-item8{
   width: 170px;
   height: 170px;
+  z-index: 2;
 /*  border: solid;
   border-color: white;*/
 }
 
 .front8{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   
   background-color: lightblue;
   
@@ -329,7 +330,7 @@ h1{
 
 .back8{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   border: solid;
   border-width: 10px;
@@ -369,13 +370,14 @@ h1{
   background-color: #2196F3;*/
   width: 150px;
   height: 150px;
+  z-index: 2;
 /*  border: solid;
   border-color: white;*/
 }
 
 .front16{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   background-color: lightblue;
 
@@ -402,7 +404,7 @@ h1{
 .back16{
   /*position: absolute;*/
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   color: #2196F3;
   display: flex;
@@ -441,6 +443,7 @@ h1{
   background-color: #2196F3;*/
   width: 115px;
   height: 115px;
+  z-index: 2;
   /*border: solid;
   border-color: white;*/
 }
@@ -448,7 +451,7 @@ h1{
 
 .front32{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   background-color: lightblue;
 
@@ -474,7 +477,7 @@ h1{
 
 .back32{
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   color: #2196F3;
   display: flex;
