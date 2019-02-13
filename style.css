@@ -114,6 +114,11 @@ h1{
   border-color: #2196F3;
 }
 
+#starwarsdiv{
+  border:solid;
+  border-color: #2196F3;
+}
+
 #choosesize8{
   border:solid;
   border-color: #2196F3;
@@ -143,6 +148,11 @@ h1{
 }
 
 #birdsdiv:hover{
+  border:solid;
+  border-color: white;
+}
+
+#starwarsdiv:hover{
   border:solid;
   border-color: white;
 }
