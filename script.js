@@ -168,7 +168,7 @@ const createBoard = (boardsize, array)=>{
     
     let f = document.createElement("div");
     f.id = `f${i}`;
-    // f.className = "carditem";
+    f.className = "carditem";
     f.addEventListener("click", ()=>onSpin(`f${i}`, `b${i}`));
 
 
@@ -190,7 +190,6 @@ const createBoard = (boardsize, array)=>{
     }
 
   document.getElementById("match-container").id=`match-container${boardsize}`;
- 
   document.getElementById("choosesize").className="none";
   document.getElementById("maingameboarddiv").className="maingameboarddiv";
 

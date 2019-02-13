@@ -455,10 +455,12 @@ border-color: white;
 
 
 /*FLIPPER STYLE*/
-.flipper {
-  -webkit-perspective: 900000px;
+.carditem{
+-webkit-perspective: 900000px;
   perspective: 900000px;
+}
 
+.flipper {
 	position: relative;
 
   -webkit-transform: rotateY(180deg);
@@ -475,10 +477,6 @@ border-color: white;
 }
 
 .flipback{
-  -webkit-perspective: 900000px;
-  perspective: 900000px;
-
-
   position: relative;
 
   -webkit-transform: rotateY(0deg);
