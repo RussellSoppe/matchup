@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Match Up</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media667.css">
+	<link rel="stylesheet" type="text/css" href="mediacomp.css">
 	<link rel="stylesheet" type="text/css" href="bubbles.css">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> 
 </head>
@@ -17,8 +19,8 @@
 		<div id="needaname">
 			<div id="maintitle">Match Up</div>
 			<div id="currentplayerdiv">
-				<h1 id="currentlyplayertitle">Current Player: </h1>
-				<h1 id="currentplayer">Player 1</h1>
+				<span id="currentlyplayertitle">Current Player: </span>
+				<span id="currentplayer">Player 1</span>
 			</div>
 			<div id="announcements">
 				
@@ -45,15 +47,20 @@
 						<div class="chooseboardsizeitem" id="choosesize32">32</div>
 					</div>
 				</div>
-				
-				
 
 				<div class="none" id="maingameboarddiv">
 					<!-- maingameboarddiv -->
-					<div class="playerscorediv">
-						<div class="playerscoretext">Player 1</div> 
-						<div id="playeronescore">0</div>
+					<div id="playerscoremaindiv">
+						<div class="playerscorediv">
+							<div class="playerscoretext">Player 1</div> 
+							<div id="playeronescore">0</div>
+						</div>
+						<div class="playerscorediv">
+							<div class="playerscoretext">Player 2</div>
+							<div id="playertwoscore">0</div>
+						</div>
 					</div>
+
 					<div class="cardsareadiv">
 						<div id="match-container">
 						</div>
@@ -62,10 +69,7 @@
 							</button>
 						</div>
 					</div>
-					<div class="playerscorediv">
-						<div class="playerscoretext">Player 2</div>
-						<div id="playertwoscore">0</div>
-					</div>
+					
 				</div>
 				<!-- Game Board -->
 
@@ -115,7 +119,9 @@
 	    <div class="bubble x25"></div>
 
 	</div>
-
+<div id="endcredits">
+<span>This website was created by Russell Soppe. <a href="www.russellsoppe.com">www.russellsoppe.com</a></span>
+</div>
 </div>
 
 <!-- <script type="text/javascript"></script> -->

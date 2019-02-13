@@ -1,3 +1,5 @@
+@media only screen and (min-width: 667px){
+
 #appouterdiv{
 /*  display: flex;
   justify-content: center;*/
@@ -95,7 +97,6 @@
   justify-content: center;
   border-radius: 10px;
 }
-
 
 
 
@@ -443,9 +444,9 @@
 /*<<<<<<<<<<< 32 Card Board >>>>>>>>>>>*/
 #match-container32{
   display: grid;
-  grid-template-columns: 85px 85px 85px 85px;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
   /*grid-template-columns: 115px 115px 115px 115px 115px 115px 115px 115px;*/
-  grid-row-gap: 10px;
+  grid-row-gap: 5px;
   grid-column-gap: 5px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -454,8 +455,8 @@
 .match-outer-item32{
 /*  background-color: rgba(255, 255, 255, 0.8);
   background-color: #2196F3;*/
-  width: 85px;
-  height: 85px;
+  width: 80px;
+  height: 80px;
   z-index: 2;
   /*border: solid;
   border-color: white;*/
@@ -473,8 +474,8 @@
   border-color: #2196F3;
 
   border-radius: 15px;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   text-align: center;
 
   transform: rotateY(0deg);
@@ -503,8 +504,8 @@
   border-color: #2196F3;
 
   border-radius: 15px;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   font-size: 55px;
   text-align: center;
 
@@ -547,10 +548,4 @@
 	width: 305px;
 }
 
-#endcredits{
-  font-size: 8px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  color: white;
 }
