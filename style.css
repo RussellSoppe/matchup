@@ -457,6 +457,15 @@ border-color: white;
 /*FLIPPER STYLE*/
 .flipper {
 	position: relative;
+
+  -webkit-transform: rotateY(180deg);
+  -webkit-transition: 0.8s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transform: rotateY(180deg);
+  -moz-transition: 0.8s;
+  -moz-transform-style: preserve-3d;
+
 	transform: rotateY(180deg);
 	transition: 0.8s;
 	transform-style: preserve-3d;
@@ -464,6 +473,15 @@ border-color: white;
 
 .flipback{
   position: relative;
+
+  -webkit-transform: rotateY(0deg);
+  -webkit-transition: 0.8s;
+  -webkit-transform-style: preserve-3d;
+
+  -moz-transform: rotateY(0deg);
+  -moz-transition: 0.8s;
+  -moz-transform-style: preserve-3d;
+
   transform: rotateY(0deg);
   transition: 0.8s;
   transform-style: preserve-3d;
