@@ -3,6 +3,7 @@
   justify-content: center;*/
 }
 
+
 #appinnerdiv{
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@
 }
 
 h1{
-	color: grey;
+	color: white;
   font-size: 3em;
 }
 
@@ -45,7 +46,7 @@ h1{
 }
 
 .chooseboardsizediv{
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 400px;
@@ -97,7 +98,6 @@ h1{
 .chooseboardsizetitletext{
   color:white;
 }
-
 
 #numbersdiv{
   border:solid;
@@ -202,7 +202,7 @@ h1{
 }
 
 #currentplayer{
-font-size: 2em;
+  font-size: 2em;
 }
 
 .maingameboarddiv{
@@ -310,6 +310,13 @@ border-color: white;
 .front8{
   position: absolute;
   z-index: 2;
+  
+  -webkit-transform: rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(0deg);
+  -moz-backface-visibility: hidden;
+
   transform: rotateY(0deg);
   backface-visibility: hidden;
 
@@ -323,6 +330,12 @@ border-color: white;
 
 .back8{
   /*position: absolute;*/
+  -webkit-transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(180deg);
+  -moz-backface-visibility: hidden;
+
   transform: rotateY(180deg);
   backface-visibility: hidden;
 
@@ -367,6 +380,13 @@ border-color: white;
 .front16{
   position: absolute;
   z-index: 2;
+
+  -webkit-transform: rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(0deg);
+  -moz-backface-visibility: hidden;
+
   transform: rotateY(0deg);
   backface-visibility: hidden;
 
@@ -380,6 +400,12 @@ border-color: white;
 
 .back16{
   /*position: absolute;*/
+  -webkit-transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(180deg);
+  -moz-backface-visibility: hidden;
+
   transform: rotateY(180deg);
   backface-visibility: hidden;
 
@@ -423,6 +449,13 @@ border-color: white;
 .front32{
   position: absolute;
   z-index: 2;
+
+  -webkit-transform: rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(0deg);
+  -moz-backface-visibility: hidden;
+
   transform: rotateY(0deg);
   backface-visibility: hidden;
 
@@ -437,6 +470,12 @@ border-color: white;
 
 .back32{
   /*position: absolute;*/
+  -webkit-transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+
+  -moz-transform: rotateY(180deg);
+  -moz-backface-visibility: hidden;
+
   transform: rotateY(180deg);
   backface-visibility: hidden;
 
