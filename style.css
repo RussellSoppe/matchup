@@ -28,7 +28,7 @@
 }
 
 h1{
-	color: white;
+	color: grey;
   font-size: 3em;
 }
 
@@ -456,6 +456,9 @@ border-color: white;
 
 /*FLIPPER STYLE*/
 .flipper {
+  -webkit-perspective: 900000px;
+  perspective: 900000px;
+
 	position: relative;
 
   -webkit-transform: rotateY(180deg);
@@ -472,6 +475,10 @@ border-color: white;
 }
 
 .flipback{
+  -webkit-perspective: 900000px;
+  perspective: 900000px;
+
+
   position: relative;
 
   -webkit-transform: rotateY(0deg);
@@ -480,7 +487,7 @@ border-color: white;
 
   -moz-transform: rotateY(0deg);
   -moz-transition: 0.8s;
-  -moz-transform-style: preserve-3d;
+  -moz-rotate transform-style: preserve-3d;
 
   transform: rotateY(0deg);
   transition: 0.8s;
