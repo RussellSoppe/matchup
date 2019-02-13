@@ -119,6 +119,11 @@ h1{
   border-color: #2196F3;
 }
 
+#dispdiv{
+  border:solid;
+  border-color: #2196F3;
+}
+
 #choosesize8{
   border:solid;
   border-color: #2196F3;
@@ -140,36 +145,50 @@ h1{
 #numbersdiv:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
 
 #shapesdiv:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
 
 #birdsdiv:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
 
 #starwarsdiv:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
+
+#dispdiv:hover{
+  border:solid;
+  border-color: white;
+  cursor: pointer;
+}
+
 
 #choosesize8:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
 
 #choosesize16:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
 
 #choosesize32:hover{
   border:solid;
   border-color: white;
+  cursor: pointer;
 }
 
 #currentplayerdiv{

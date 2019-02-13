@@ -3,6 +3,8 @@
 import { shapesthemearray } from './themes/shapes/shapes.js';
 import { birdsthemearray } from './themes/birds/birds.js';
 import { starwarsarray } from './themes/starwars/starwars.js';
+import { disneyprincessarray } from './themes/disneyprincess/disneyprincess.js';
+
 const numbersthemearray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 
 
@@ -119,6 +121,7 @@ let numbers = document.getElementById("numbersdiv");
 let shapes = document.getElementById("shapesdiv");
 let birds = document.getElementById("birdsdiv");
 let starwars = document.getElementById("starwarsdiv");
+let disneyp = document.getElementById("dispdiv");
 
 const chooseTheme = (themearray)=>{
   theme = themearray;
@@ -130,6 +133,7 @@ numbers.addEventListener("click", ()=>chooseTheme(numbersthemearray));
 shapes.addEventListener("click", ()=>chooseTheme(shapesthemearray));
 birds.addEventListener("click", ()=>chooseTheme(birdsthemearray));
 starwars.addEventListener("click", ()=>chooseTheme(starwarsarray));
+disneyp.addEventListener("click", ()=>chooseTheme(disneyprincessarray));
 
 
 // Setting Board Size
