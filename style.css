@@ -305,7 +305,7 @@ h1{
   position: absolute;
   z-index: 1;
   
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: lightblue;
   
   border: solid;
   border-width: 10px;
@@ -340,8 +340,7 @@ h1{
   align-items: center;
   justify-content: center;
 
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: lightblue;
   border-radius: 15px;
   width: 150px;
   height: 150px;
@@ -378,7 +377,7 @@ h1{
   position: absolute;
   z-index: 1;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: lightblue;
 
   border: solid;
   border-width: 10px;
@@ -410,7 +409,7 @@ h1{
   align-items: center;
   justify-content: center;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: lightblue;
 
   border: solid;
   border-width: 10px;
@@ -451,7 +450,7 @@ h1{
   position: absolute;
   z-index: 1;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: lightblue;
 
   border: solid;
   border-width: 10px;
@@ -482,7 +481,7 @@ h1{
   align-items: center;
   justify-content: center;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: lightblue;
 
   border: solid;
   border-width: 10px;
