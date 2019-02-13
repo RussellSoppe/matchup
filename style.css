@@ -29,7 +29,7 @@
 }
 
 h1{
-	color: white;
+	color: grey;
   font-size: 3em;
 }
 
@@ -72,7 +72,7 @@ h1{
 }
 
 .choosethemediv{
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 400px;
@@ -495,8 +495,9 @@ border-color: white;
 
 /*FLIPPER STYLE*/
 .carditem{
--webkit-perspective: 900000px;
-  perspective: 900000px;
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  perspective: 100px;
 }
 
 .flipper {
