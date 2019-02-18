@@ -130,6 +130,11 @@
   border-color: #2196F3;
 }
 
+#superheroesdiv{
+  border:solid;
+  border-color: #2196F3;
+}
+
 #numbersdiv:hover{
   border:solid;
   border-color: white;
@@ -155,6 +160,12 @@
 }
 
 #dispdiv:hover{
+  border:solid;
+  border-color: white;
+  cursor: pointer;
+}
+
+#superheroesdiv:hover{
   border:solid;
   border-color: white;
   cursor: pointer;

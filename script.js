@@ -4,6 +4,7 @@ import { shapesthemearray } from './themes/shapes/shapes.js';
 import { birdsthemearray } from './themes/birds/birds.js';
 import { starwarsarray } from './themes/starwars/starwars.js';
 import { disneyprincessarray } from './themes/disneyprincess/disneyprincess.js';
+import { superarray } from './themes/super/super.js';
 
 const numbersthemearray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 
@@ -122,6 +123,7 @@ let shapes = document.getElementById("shapesdiv");
 let birds = document.getElementById("birdsdiv");
 let starwars = document.getElementById("starwarsdiv");
 let disneyp = document.getElementById("dispdiv");
+let superheroes = document.getElementById("superheroesdiv");
 
 const chooseTheme = (themearray)=>{
   theme = themearray;
@@ -134,7 +136,7 @@ shapes.addEventListener("click", ()=>chooseTheme(shapesthemearray));
 birds.addEventListener("click", ()=>chooseTheme(birdsthemearray));
 starwars.addEventListener("click", ()=>chooseTheme(starwarsarray));
 disneyp.addEventListener("click", ()=>chooseTheme(disneyprincessarray));
-
+superheroes.addEventListener("click", ()=>chooseTheme(superarray));
 
 // Setting Board Size
 let eightcards = document.getElementById("choosesize8");
